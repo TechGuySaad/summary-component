@@ -12,7 +12,7 @@ export default function Home() {
 
   useEffect(() => {
     async function fetchData() {
-      const result = await axios.get("http://localhost:3000/api");
+      const result = await axios.get("https://summary-component-sandy.vercel.app/");
       setData(result.data);
       console.log(result.data);
     }
